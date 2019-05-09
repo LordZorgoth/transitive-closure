@@ -4,4 +4,4 @@ The easiest way to test the principal function, transitive_closure(), is to use 
 
 To convince yourself that we really are getting the transitive closure, you can use the short function is_transitive() and the parameter check_accuracy=True in test_transitive_closure_function. The parameter calls is_transitive() on the final output of transitive_closure(), and also causes verify_edges() to be invoked after every step of the primary loop, which double checks that the new edges are all things that must be in the transitive closure.
 
-çThis module technically requires numpy, but it can easily be edited to work in base Python. The only use of numpy is for generating random 32-bit integers (Python's default int class being much larger in memory). Simply replace np.random with random in all cases, and omit the dtype=np.int32 argument.
+This module technically requires numpy, but it can easily be edited to work in base Python. The only use of numpy is for generating random 32-bit integers (Python's default int class being much larger in memory). Simply replace np.random with random in all cases, and omit the dtype=np.int32 argument.

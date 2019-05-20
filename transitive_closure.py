@@ -305,7 +305,7 @@ def iterate_over_node(node, X, Y, X_new={}, Y_new={}, N_new_edge_termini=set(),
                     new_edges_by_node[node].add((x, y))
                 if stats is not None:
                     stats['new_edges_count'] += 1
-           if stats is not None:
+            if stats is not None:
                 stats['edge_candidates_processed'] += 1
                 stats['edge_candidates_processed_in_step'] += 1
     return X_new, Y_new, N_new_edge_termini
@@ -448,9 +448,8 @@ def test_transitive_closure_function(
 
 if __name__ == "__main__":
     import sys
-    test_transitive_closure_function(E_size=80000, N_range=100000,
+    test_transitive_closure_function(E_size=10000, N_range=10000,
                                      verbose=True, update_period=3000,
                                      update_mode='by_time', check_accuracy=True,
                                      print_seed=False, seed=None)
     sys.exit(0)
-

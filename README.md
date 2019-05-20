@@ -1,4 +1,4 @@
-This is a silly project that implements an algorithm for finding the transitive closure of a relation, which can also be thought of as a directed graph, hence the use of the terms nodes and edges in the comments and documentation.
+This is a silly project that implements an algorithm for finding the transitive closure of a relation, which can also be thought of as a directed graph, hence the use of the terms nodes and edges in the comments and documentation. This uses a naive algorithm I came up with after a phone call; I am going to extend this project by writing up a more sophisticated parallelized algorithm (probably not mine) with Apache Spark.
 
 The easiest way to test the principal function, transitive_closure(), is to use the premade transitive_closure_function_test(). You can use this function either after importing transitive-closure to an interpreter, or by calling python transitive-closure.py from the command line. Arguments can be passed in the interpreter (see docstring), but none are needed and it has reasonable defaults. Do make sure to ask for the return values when you call it in an interpreter, or you could get a very long terminal output...
 
